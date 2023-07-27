@@ -111,6 +111,7 @@ function go_install() {
         ;;
         esac
         
+        sudo mkdir /usr/local/go
         sudo installer -pkg /tmp/golang.pkg -target /usr/local/go
         sudo rm /tmp/golang.pkg
 
