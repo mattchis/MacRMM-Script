@@ -10,7 +10,7 @@ if [[ $1 == "help" ]]; then
         echo ""
         echo "List of INSTALL/UPDATE argument (no argument name):"
         echo "Arg 1: 'install' or 'update'"
-        echo "Arg 2: System type 'amd64' 'x86' 'arm64' 'armv6'"
+        echo "Arg 2: System type 'amd64' 'arm64'"
         echo "Arg 3: Mesh agent URL"
         echo "Arg 4: API URL"
         echo "Arg 5: Client ID"
@@ -209,7 +209,6 @@ function uninstall_mesh() {
 
 case $1 in
 install)
-        #check_profile
         go_install
         install_mesh
         agent_compile
@@ -218,7 +217,6 @@ install)
         echo "Tactical Agent Install is done"
         exit 0;;
 update)
-        #check_profile
         go_install
         agent_compile
         update_agent
@@ -226,7 +224,6 @@ update)
         echo "Tactical Agent Update is done"
         exit 0;;
 uninstall)
-        #check_profile
         uninstall_agent
         uninstall_mesh
         echo "Tactical Agent Uninstall is done"
