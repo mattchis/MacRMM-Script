@@ -1,25 +1,24 @@
 # MacRMM-Script
 
-To help users that want to add Mac Agents to Tactical RMM, without need to pay upfront for code signed agents. If this solution works for you, consider contributing to Tactical RMM project!
-
+This script is designed to assist users in adding Mac agents to Tactical RMM without the need for upfront payment for code-signed agents. If you find this solution beneficial, please consider contributing to the Tactical RMM project!
 
 # rmmagent-script
-Script for one-line installing and update of tacticalRMM agent
 
-> Now amd64 and arm64 scripts are available but only the amd64 scipt has been tested on macOS 13 (Ventura)
+Script for one-line installation and updating of the tacticalRMM agent.
 
-Script for other platform will be available futher as I adapt script on other platform.
-Feel free to adapt script and submit me !
+> Currently, both amd64 and arm64 scripts are available; however, only the amd64 version has been tested on macOS 13 (Ventura).
+
+Scripts for additional platforms will be developed and released as they are adapted. You are welcome to modify the script and contribute your improvements back to the project.
 
 # Usage
+
 Download the script that match your configuration
 
 ### Tips
-
-Download script with this url: `https://git.mattchis.net/mattchis/MacRMM-Script/raw/branch/main/rmmagent-mac.sh`
+Download script with this url: `https://raw.githubusercontent.com/mattchis/MacRMM-Script/main/rmmagent-mac.sh`
 
 ## Install
-To install agent launch the script with this arguement:
+To install agent launch the script with this argument:
 
 ```bash
 ./rmmagent-mac.sh install 'System type' 'Mesh agent' 'API URL' 'Client ID' 'Site ID' 'Auth Key' 'Agent Type'
@@ -44,17 +43,17 @@ The argument are:
   
 5. Client ID
 
-  The ID of the client in wich agent will be added.
+  The ID of the client in which agent will be added.
   Can be view by hovering the name of the client in the dashboard.
   
 6. Site ID
 
-  The ID of the site in wich agent will be added.
+  The ID of the site in which agent will be added.
   Can be view by hovering the name of the site in the dashboard.
   
 7. Auth Key
 
-  Authentification key given by dashboard by going to dashboard > Agents > Install agent (Windows) > Select manual and show
+  Authentication key given by dashboard by going to dashboard > Agents > Install agent (Windows) > Select manual and show
   Copy **ONLY** the key after *--auth*.
   
 8. Agent Type
@@ -67,7 +66,6 @@ The argument are:
 ```
 
 ## Update
-
 Simply launch the script that match your system with *update* as argument.
 
 ```bash
@@ -75,12 +73,12 @@ Simply launch the script that match your system with *update* as argument.
 ```
 
 ## Uninstall
-To uninstall agent launch the script with this arguement:
+To uninstall the agent, execute the script with the following argument:
 
 ```bash
 ./rmmagent-mac.sh uninstall
 ```
 
 ### WARNING
-- You should **only** attempt this if the agent removal feaure on TacticalRMM is not working.
+- You should **only** attempt this if the agent removal feature on TacticalRMM is not working.
 - Running uninstall will **not** remove the connections from the TacticalRMM and MeshCentral Dashboard. You will need to manually remove them. It only forcefully removes the agents from your linux box.
