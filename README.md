@@ -16,9 +16,6 @@ Scripts for additional platforms will be developed and released as they are adap
 
 Download the script that match your configuration
 
-### Tips
-Download script with this url: `https://raw.githubusercontent.com/mattchis/MacRMM-Script/main/rmmagent-mac.sh`
-
 ## Install
 To install agent launch the script with this argument:
 
