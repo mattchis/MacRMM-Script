@@ -67,7 +67,7 @@ This sets up all the permissions for screenrecording, file, and disk access for 
 ./rmmagent-mac.sh enablepermissions
 ```
 ## Seqouia Fix
-This will fix issues with "Take Control" from the dashboard not displaying the screen. Credit goes to PeetMcK and si458 for the solution (https://github.com/Ylianst/MeshCentral/issues/6402)
+This will fix issues with "Take Control" from the dashboard not displaying the screen. Credit goes to [PeetMcK](https://github.com/PeetMcK) and [si458](https://github.com/si458) for the solution [https://github.com/Ylianst/MeshCentral/issues/6402](https://github.com/Ylianst/MeshCentral/issues/6402)
 ```bash
 ./rmmagent-mac.sh sequoiafix
 ```
