@@ -8,7 +8,7 @@ This script is designed to assist users in adding Mac agents to Tactical RMM wit
 
 Script for one-line installation and updating of the tacticalRMM agent.
 
-> Currently, both amd64 and arm64 scripts are available and has been tested with MacOS 14 (Sonoma) and MacOS 15 (Sequoia); however, only the amd64 version has been tested on macOS 13 (Ventura).
+> Currently, both amd64 and arm64 scripts are available and has been tested with MacOS 14 (Sonoma) and MacOS 15 (Sequoia).
 
 Scripts for additional platforms will be developed and released as they are adapted. You are welcome to modify the script and contribute your improvements back to the project.
 
